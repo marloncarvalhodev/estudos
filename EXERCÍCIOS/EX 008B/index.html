@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte </h2>
+    <h3>Código em JavaScript</h3>
+    <p>O comando document.ElementById('teste') é escrito em linguagem 
+    JavaScript</p> 
+    <p>Note que o comando anterior está com uma formatação não monoespaçada, para deixar monoespaçado vamos envelopar o comando e digitar a tag CODE, observe o resultado abaixo: </p>
+    <p>O comando <code>document.ElementById('teste')</code> é escrito em linguagem 
+        JavaScript</p>
+        <p>Portanto, deixando a fonte monoespaçada facilitará a leitura dos códigos fonte</p>
+        <h3>Código em Python</h3>
+        <p> A tag CODE por sua vez não organiza os códigos com indetação, que é arrumação padrão do código, observe o exemplo abaixo:  </p>
+
+        <p>
+num=int(input('digite um número')) 
+if num % 2 == 0:
+print(f'0 número {num} é PAR') 
+else:
+print(f'0 o número {num} é ÍMPAR')
+print('fim do programa')
+
+        </p>
+
+        <p>A solução pra isso é envelopar essa tag CODE em uma Tag PRE assim o código vai permanecer com a arrumação padrão, mas atenção, pois essa tag considera os espaços e até mesmo as quebras de linha, observe abaixo: </p>
+
+        <p>
+            <pre>
+                <code>
+num=int(input('digite um número')) 
+if num % 2 == 0:
+print(f'0 número {num} é PAR') 
+else:
+print(f'0 o número {num} é ÍMPAR')
+print('fim do programa')
+            </code>
+        </pre>
+        </p>
+        <h2>Citações</h2>
+        <h3>Citações simples</h3>
+
+        <p>
+            Como diria um amigo, o computador é um burro muito rápido. 
+        </p>
+
+            <p>Para deixar essa frase como uma citação podemos adicionar as aspas manualmente ou envelopar o texto com a tag Q, observe abaixo:
+
+            <q><strong>Como diria um velho amigo, o computador é um burro muito rápido</strong>.</q>
+            </p>
+            <h3>Citações completas</h3>
+            <p>Observe o exemplo de uma citação completa:
+                Segundo Jeff Noble, no seu livro HTML para leigos:
+            </p>
+            <blockquote cite=" https://www.google.com.br/books/edition/HTML_XHTML_and_CSS_For_Dummies/oWkeeH6ik1MC?hl=pt-BR&gbpv=1&dq=html+e+css+para+leigos+jeff+noble&printsec=frontcover">
+
+                A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descreve os blocos de texto
+            </blockquote>
+            <h2>Abreviações</h2>
+            <p>Estamos estudando no curso <abbr title="Hypertext Markeup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, está sendo icrível</p>
+            <h2>Texto invertido</h2>
+            <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+</body>
+</html>
